@@ -2,7 +2,7 @@ exports.gcfSendGrid = (data, context) => {
   const sendGridMail = require('@sendgrid/mail');
   sendGridMail.setApiKey("");
   const msg = {
-    #for multiple address 'TOADDRESS@gmail.com,TOADDRESS@gmail.com',
+    /* for multiple address 'TOADDRESS@gmail.com,TOADDRESS@gmail.com', */
     to: 'TOADDRESS@gmail.com',
     from: 'FROMADDRESS@gmail.com',
     subject: 'Learn GCP with Marcus - Send Emails from Cloud Functions with SendGrid using Nodejs8',
